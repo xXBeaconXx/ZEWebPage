@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZE - Rivals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== 導航欄 ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">🎮</span>
+                <span class="logo-text">ZE - Rivals</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="#divisions">戰隊分部</a></li>
+                <li><a href="#members">核心成員</a></li>
+                <li><a href="#recruit">加入我們</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="切換選單">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== Hero 區塊 ==================== -->
+    <header class="hero" id="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <div class="badge-glow"></div>
+                <span class="badge-text">[戰隊標誌/簡稱]</span>
+            </div>
+            <h1 class="hero-title">[戰隊名稱]</h1>
+            <p class="hero-subtitle">[戰隊標語/宣言]</p>
+            <p class="hero-description">[戰隊簡短介紹，約1-2句話描述戰隊風格與目標]</p>
+            <div class="hero-buttons">
+                <a href="#recruit" class="btn btn-primary">加入群組</a>
+                <a href="#divisions" class="btn btn-outline">了解分部</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">2025</span>
+                    <span class="stat-label">創立年份</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">31</span>
+                    <span class="stat-label">戰隊成員</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">活躍分部</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>向下探索</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- ==================== 關於我們 ==================== -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-accent">//</span> 關於我們
+            </h2>
+            <div class="about-card">
+                <h3>戰隊簡介</h3>
+                <p>我們是活躍於Rivals的休閒戰隊，致力於提供一個友善、積極的遊戲環境，讓玩家們能夠在遊戲中享受樂趣、提升技術、結交朋友</p>
+                <div class="about-details">
+                    <span><strong>🎯 主要遊戲：</strong>Rivals</span>
+                    <span><strong>🌐 活躍地區：</strong>東南亞</span>
+                    <span><strong>⏰ 活躍時段：</strong>周末</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 戰隊分部 ==================== -->
+    <section class="divisions" id="divisions">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-accent">//</span> 戰隊分部
+            </h2>
+            <p class="section-desc">我們擁有兩個活躍分部，各自專注於不同的遊戲模式與風格</p>
+
+            <!-- 分部切換標籤 -->
+            <div class="division-tabs" role="tablist">
+                <button class="division-tab active" data-tab="div1" role="tab" aria-selected="true" id="tab-div1">
+                    <span class="tab-glow"></span>
+                    <span class="tab-icon">⚔️</span>
+                    <span class="tab-name">Zero Eternity</span>
+                    <span class="tab-badge">[分部一標籤]</span>
+                </button>
+                <div class="tab-divider"></div>
+                <button class="division-tab" data-tab="div2" role="tab" aria-selected="false" id="tab-div2">
+                    <span class="tab-glow"></span>
+                    <span class="tab-icon">⚔️</span>
+                    <span class="tab-name">Zero Echo</span>
+                    <span class="tab-badge">[分部二標籤]</span>
+                </button>
+            </div>
+
+            <!-- 分部一面板 -->
+            <div class="division-panel active" id="panel-div1" role="tabpanel">
+                <div class="division-card">
+                    <div class="division-header">
+                        <h3 class="division-name">Zero Eternity</h3>
+                        <span class="division-status status-active">招募中</span>
+                    </div>
+                    <div class="division-body">
+                        <div class="division-info-grid">
+                            <div class="info-item">
+                                <span class="info-label">分部隊長</span>
+                                <span class="info-value">[分部一隊長遊戲ID]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">遊戲模式</span>
+                                <span class="info-value">休閒匹配</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">當前成員</span>
+                                <span class="info-value highlight">31人</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">最佳戰績</span>
+                                <span class="info-value highlight">[最佳戰績]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">入隊門檻</span>
+                                <span class="info-value">[入隊要求]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">群組連結</span>
+                                <span class="info-value">[群組邀請連結]</span>
+                            </div>
+                        </div>
+                        <div class="division-description">
+                            <h4>分部描述</h4>
+                            <p>[分部一詳細描述，介紹此分部的特色、風格等。可以說明適合什麼類型的玩家加入。]</p>
+                        </div>
+                        <div class="division-members">
+                            <h4>分部成員</h4>
+                            <div class="table-wrapper">
+                                <table class="member-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Discord 名稱</th>
+                                            <th>遊戲內名稱</th>
+                                            <th>戰隊內階級</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>[Discord名稱]</td>
+                                            <td>[遊戲內名稱]</td>
+                                            <td>[戰隊內階級]</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[Discord名稱]</td>
+                                            <td>[遊戲內名稱]</td>
+                                            <td>[戰隊內階級]</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[Discord名稱]</td>
+                                            <td>[遊戲內名稱]</td>
+                                            <td>[戰隊內階級]</td>
+                                        </tr>
+                                        <!-- 依實際成員數量複製上方 <tr> 區塊 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分部二面板 -->
+            <div class="division-panel" id="panel-div2" role="tabpanel">
+                <div class="division-card">
+                    <div class="division-header">
+                        <h3 class="division-name">Zero Echo</h3>
+                        <span class="division-status status-recruiting">招募中</span>
+                    </div>
+                    <div class="division-body">
+                        <div class="division-info-grid">
+                            <div class="info-item">
+                                <span class="info-label">分部隊長</span>
+                                <span class="info-value">[分部二隊長遊戲ID]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">遊戲模式</span>
+                                <span class="info-value">[分部二主要遊戲模式，例如：休閒娛樂、戰術模擬等]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">當前成員</span>
+                                <span class="info-value highlight">[分部二成員數] 人</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">最佳戰績</span>
+                                <span class="info-value highlight">[分部二最佳戰績，例如：區域賽事冠軍]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">入隊門檻</span>
+                                <span class="info-value">[分部二入隊要求，例如：無特別要求、需通過試訓等]</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">群組連結</span>
+                                <span class="info-value">[分部二群組邀請連結或聯絡方式]</span>
+                            </div>
+                        </div>
+                        <div class="division-description">
+                            <h4>分部描述</h4>
+                            <p>[分部二詳細描述，介紹此分部的特色、風格、訓練方式、團隊氛圍等。可以說明適合什麼類型的玩家加入。]</p>
+                        </div>
+                        <div class="division-members">
+                            <h4>分部成員</h4>
+                            <div class="table-wrapper">
+                                <table class="member-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Discord 名稱</th>
+                                            <th>遊戲內名稱</th>
+                                            <th>戰隊內階級</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>[Discord名稱]</td>
+                                            <td>[遊戲內名稱]</td>
+                                            <td>[戰隊內階級]</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[Discord名稱]</td>
+                                            <td>[遊戲內名稱]</td>
+                                            <td>[戰隊內階級]</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[Discord名稱]</td>
+                                            <td>[遊戲內名稱]</td>
+                                            <td>[戰隊內階級]</td>
+                                        </tr>
+                                        <!-- 依實際成員數量複製上方 <tr> 區塊 -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 核心成員 ==================== -->
+    <section class="members" id="members">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-accent">//</span> 核心成員
+            </h2>
+            <p class="section-desc">認識我們的戰隊核心陣容</p>
+            <div class="members-grid">
+                <!-- 成員卡片 1 -->
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <span class="avatar-placeholder">[成員1頭像]</span>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">[成員1遊戲ID]</h4>
+                        <span class="member-role role-leader">[成員1職位，例如：戰隊隊長]</span>
+                        <span class="member-division-tag">[所屬分部]</span>
+                        <p class="member-specialty">擅長：[成員1擅長角色/英雄/武器]</p>
+                    </div>
+                </div>
+                <!-- 成員卡片 2 -->
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <span class="avatar-placeholder">[成員2頭像]</span>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">[成員2遊戲ID]</h4>
+                        <span class="member-role role-coleader">[成員2職位，例如：副隊長]</span>
+                        <span class="member-division-tag">[所屬分部]</span>
+                        <p class="member-specialty">擅長：[成員2擅長角色/英雄/武器]</p>
+                    </div>
+                </div>
+                <!-- 成員卡片 3 -->
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <span class="avatar-placeholder">[成員3頭像]</span>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">[成員3遊戲ID]</h4>
+                        <span class="member-role role-member">[成員3職位，例如：核心隊員]</span>
+                        <span class="member-division-tag">[所屬分部]</span>
+                        <p class="member-specialty">擅長：[成員3擅長角色/英雄/武器]</p>
+                    </div>
+                </div>
+                <!-- 成員卡片 4 -->
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <span class="avatar-placeholder">[成員4頭像]</span>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">[成員4遊戲ID]</h4>
+                        <span class="member-role role-member">[成員4職位，例如：核心隊員]</span>
+                        <span class="member-division-tag">[所屬分部]</span>
+                        <p class="member-specialty">擅長：[成員4擅長角色/英雄/武器]</p>
+                    </div>
+                </div>
+                <!-- 成員卡片 5 -->
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <span class="avatar-placeholder">[成員5頭像]</span>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">[成員5遊戲ID]</h4>
+                        <span class="member-role role-member">[成員5職位]</span>
+                        <span class="member-division-tag">[所屬分部]</span>
+                        <p class="member-specialty">擅長：[成員5擅長角色/英雄/武器]</p>
+                    </div>
+                </div>
+                <!-- 成員卡片 6 -->
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <span class="avatar-placeholder">[成員6頭像]</span>
+                    </div>
+                    <div class="member-info">
+                        <h4 class="member-name">[成員6遊戲ID]</h4>
+                        <span class="member-role role-member">[成員6職位]</span>
+                        <span class="member-division-tag">[所屬分部]</span>
+                        <p class="member-specialty">擅長：[成員6擅長角色/英雄/武器]</p>
+                    </div>
+                </div>
+            </div>
+            <p class="members-note">※ 以上為部分核心成員，完整名單請洽群組管理員</p>
+        </div>
+    </section>
+
+    <!-- ==================== 加入我們 ==================== -->
+    <section class="recruit" id="recruit">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-accent">//</span> 加入我們
+            </h2>
+            <div class="recruit-grid">
+                <div class="recruit-card">
+                    <h3>📋 入隊條件</h3>
+                    <ul class="recruit-list">
+                        <li>[入隊條件1，例如：具備基本遊戲禮儀]</li>
+                        <li>[入隊條件2，例如：能使用語音溝通]</li>
+                        <li>[入隊條件3，例如：活躍上線頻率要求]</li>
+                        <li>[入隊條件4，例如：需通過簡單面試/試訓]</li>
+                    </ul>
+                </div>
+                <div class="recruit-card">
+                    <h3>📱 聯絡方式</h3>
+                    <div class="contact-links">
+                        <a href="[Discord邀請連結]" class="contact-link discord" target="_blank" rel="noopener">
+                            <span class="contact-icon">💬</span>
+                            <span>Discord 群組</span>
+                        </a>
+                        <a href="[Line群組連結]" class="contact-link line" target="_blank" rel="noopener">
+                            <span class="contact-icon">📱</span>
+                            <span>Line 群組</span>
+                        </a>
+                        <a href="[Facebook社團連結]" class="contact-link facebook" target="_blank" rel="noopener">
+                            <span class="contact-icon">📘</span>
+                            <span>Facebook 社團</span>
+                        </a>
+                        <a href="[Instagram連結]" class="contact-link instagram" target="_blank" rel="noopener">
+                            <span class="contact-icon">📷</span>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="recruit-card">
+                    <h3>🕹️ 招募遊戲</h3>
+                    <div class="game-tags">
+                        <span class="game-tag">[招募遊戲1]</span>
+                        <span class="game-tag">[招募遊戲2]</span>
+                        <span class="game-tag">[招募遊戲3]</span>
+                        <span class="game-tag">[招募遊戲4]</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recruit-cta">
+                <p>[招募結語/號召性文字，例如：立即加入我們，一起征戰！]</p>
+                <a href="[主要群組邀請連結]" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+                    立即加入群組
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 頁腳 ==================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo">🎮 [戰隊名稱]</span>
+                <p>[戰隊簡短口號或版權標語]</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">首頁</a>
+                <a href="#about">關於</a>
+                <a href="#divisions">分部</a>
+                <a href="#members">成員</a>
+                <a href="#recruit">加入</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; [成立年份] - <span id="currentYear"></span> [戰隊名稱]. All Rights Reserved.</p>
+                <p class="footer-credit">Design for Gamers 🎮</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到頂部按鈕 -->
+    <button class="back-to-top" id="backToTop" aria-label="回到頂部">
+        <span>▲</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
